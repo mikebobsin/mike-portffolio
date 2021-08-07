@@ -1,0 +1,66 @@
+.card {
+  width: 288px;
+  height: 232px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 24px 8px 24px 8px;
+  color: #c4c4c4;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-image: linear-gradient(
+      135.87deg,
+      #0feffd 1.25%,
+      #ff00f5 51.73%,
+      rgba(15, 239, 253, 0) 77.22%
+    )
+    50;
+  box-shadow: 0px 0px 0px 8px rgba(29, 29, 29, 0.19);
+  &:hover {
+    border-image: linear-gradient(
+        135.87deg,
+        #0feffd 1.25%,
+        #ff00f5 51.73%,
+        #0feffd 99.75%
+      )
+      50;
+    // transition: border-image 2s ease-in-out;
+  }
+
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .card-user-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      .account-name {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .user-name {
+        font-size: 14px;
+      }
+    }
+  }
+  .card-body {
+    font-size: 16px;
+  }
+  .card-footer {
+    font-size: 14px;
+  }
+}

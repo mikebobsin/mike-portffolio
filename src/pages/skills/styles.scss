@@ -1,0 +1,120 @@
+@import "../../variables.scss";
+
+.skills__container {
+  row-gap: 0;
+  .skills__content {
+    .skills__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: $--mb-2-5;
+      cursor: pointer;
+      flex-direction: row;
+      .skills__icon {
+        margin-right: $--mb-0-75;
+      }
+      .skills__title {
+        font-size: $--h3-font-size;
+      }
+      .skills__subtitle {
+        font-size: $--small-font-size;
+        color: $--text-color-light;
+      }
+      .skills__arrow {
+        margin-left: auto;
+        transition: 0.4s;
+      }
+    }
+    .skills__list {
+      row-gap: 1.5rem;
+      padding-left: 2.7rem;
+      margin: 10px 0;
+      .skills__data {
+        .skills__titles {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: $--mb-0-5;
+          .skills__name {
+            font-size: $--normal-font-size;
+            font-weight: $--font-medium;
+          }
+        }
+        .skills__bar {
+          background-color: $--first-color-lighter;
+          .skills__percentage {
+            display: block;
+            background-color: $--first-color;
+          }
+          .skills__html {
+            width: 95%;
+          }
+          .skills__css {
+            width: 90%;
+          }
+          .skills__javascript {
+            width: 95%;
+          }
+          .skills__typescript {
+            width: 90%;
+          }
+          .skills__react {
+            width: 80%;
+          }
+          .skills__vue {
+            width: 90%;
+          }
+          .skills__vtex {
+            width: 75%;
+          }
+          .skills__figma {
+            width: 80%;
+          }
+          .skills__photoshop {
+            width: 65%;
+          }
+          .skills__adobe {
+            width: 60%;
+          }
+          .skills__scrum {
+            width: 80%;
+          }
+          .skills__kanban {
+            width: 85%;
+          }
+          .skills__jira {
+            width: 75%;
+          }
+          .skills__git {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.skills__icon,
+.skills__arrow {
+  font-size: 2rem;
+  color: $--first-color;
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+  margin: 0 !important;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: $--mb-2-5;
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}

@@ -1,0 +1,38 @@
+@import "../../variables.scss";
+
+.about {
+  .about__container {
+    .about__img {
+      width: 200px;
+      border-radius: 0.5rem;
+      justify-self: center;
+      align-items: center;
+    }
+    .about__data {
+      .about__description {
+        text-align: center;
+        margin-bottom: $--mb-2-5;
+      }
+      .about__info {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: $--mb-2-5;
+        .about__info-title {
+          display: block;
+          text-align: center;
+          font-size: $--h2-font-size;
+          font-weight: $--title-color;
+        }
+        .about__info-names {
+          font-size: $--smaller-font-size;
+          display: block;
+          text-align: center;
+        }
+      }
+      .about__buttons {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

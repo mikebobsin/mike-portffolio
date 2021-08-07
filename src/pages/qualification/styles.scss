@@ -1,0 +1,81 @@
+@import "../../variables.scss";
+
+.qualification {
+  .qualification__container {
+    .qualification__tabs {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: $--mb-2;
+      .qualification__button {
+        font-size: $--h3-font-size;
+        font-weight: $--font-medium;
+        cursor: pointer;
+        .qualification__icon {
+          font-size: 1.8rem;
+          margin-right: $--mb-0-25;
+        }
+        &:hover {
+          color: $--first-color;
+        }
+      }
+    }
+    .qualification__sections {
+      .qualification__content {
+        .qualification__data {
+          display: grid;
+          grid-template-columns: 1fr max-content 1fr;
+          column-gap: 1.5rem;
+          grid-template-rows: 100px;
+          grid-auto-flow: column;
+          text-align: right;
+          &:nth-child(even) {
+            direction: rtl;
+            text-align: left;
+            .qualification__line {
+              transform: translate(-6px, -16px);
+            }
+          }
+          &:last-child {
+            .qualification__line {
+              display: none;
+            }
+          }
+          .qualification__title {
+            font-size: $--normal-font-size;
+            font-weight: $--font-medium;
+          }
+          .qualification__subtitle {
+            display: inline-block;
+            font-size: $--small-font-size;
+            margin-bottom: $--mb-1;
+          }
+          .qualification__calendar {
+            font-size: $--smaller-font-size;
+            color: $--text-color-light;
+          }
+          .qualification__rounder {
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            background-color: $--first-color;
+            border-radius: 50%;
+          }
+          .qualification__line {
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: $--first-color;
+            transform: translate(6px, -7px);
+          }
+        }
+      }
+      .qualification__active[data-content] {
+        display: block;
+      }
+    }
+  }
+}
+
+.qualification [data-content] {
+  display: none;
+}
