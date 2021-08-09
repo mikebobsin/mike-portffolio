@@ -7,9 +7,9 @@ import MyselfAbout from "../../assets/myself-about.jpg";
 import "./styles.scss";
 
 const aboutInfo = [
-  { title: "08+", name: "Years <br> experience" },
-  { title: "20+", name: "Completed <br> projects" },
-  { title: "05+", name: "Companies <br> worked" },
+  { title: "05+", name: "Years <br> experience" },
+  { title: "10+", name: "Completed <br> projects" },
+  { title: "05", name: "Companies <br> worked" },
 ];
 
 export default function About() {

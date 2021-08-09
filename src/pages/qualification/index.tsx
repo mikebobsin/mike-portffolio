@@ -12,7 +12,7 @@ const studyData = [
   {
     course: "English",
     school: "Wizard - School",
-    date: "2007 - 2013",
+    date: "2013 - 2007",
   },
   {
     course: "System for Internet",
@@ -57,28 +57,43 @@ const workData = [
 export default function Qualification() {
   const [chngQualification, setChngQualification] = useState(false);
 
-  function changeQualification() {
-    setChngQualification(!chngQualification);
-    console.log(chngQualification);
+  function changeQualification(event: any) {
+    if (
+      event?.target?.id === "education" ||
+      event?.target?.nearestViewportElement?.id === "education__icon"
+    ) {
+      setChngQualification(false);
+    }
+    if (
+      event?.target?.id === "work" ||
+      event?.target?.nearestViewportElement?.id === "work__icon"
+    ) {
+      setChngQualification(true);
+    }
   }
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal jorney</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
           <div
             className="qualification__button button--flex"
+            id="education"
             onClick={changeQualification}
           >
-            <FaGraduationCap className="qualification__icon" />
+            <FaGraduationCap
+              className="qualification__icon"
+              id="education__icon"
+            />
             Education
           </div>
           <div
             className="qualification__button button--flex"
-            onClick={changeQualification}
+            id="work"
+            onClick={(event) => changeQualification(event)}
           >
-            <MdWork className="qualification__icon" />
+            <MdWork className="qualification__icon" id="work__icon" />
             Work
           </div>
         </div>

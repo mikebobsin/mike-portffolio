@@ -5,19 +5,17 @@ import {
   IoHome,
   IoPersonCircleSharp,
   IoCodeSlash,
-  IoBriefcase,
-  IoImages,
   IoSend,
   IoClose,
   IoAppsSharp,
+  IoRocketSharp,
 } from "react-icons/io5";
 
 const navItens = [
   { name: "Home", link: "#home", icon: "IoHome" },
   { name: "About", link: "#about", icon: "IoPersonCircleSharp" },
   { name: "Skills", link: "#skills", icon: "IoCodeSlash" },
-  { name: "Services", link: "#services", icon: "IoBriefcase" },
-  { name: "Portfolio", link: "#portfolio", icon: "IoImages" },
+  { name: "Qualification", link: "#qualification", icon: "IoRocketSharp" },
   { name: "Contact", link: "#contact", icon: "IoSend" },
 ];
 
@@ -49,10 +47,8 @@ export default function Navbar() {
                       <IoPersonCircleSharp className="nav__icon" />
                     ) : x.icon === "IoCodeSlash" ? (
                       <IoCodeSlash className="nav__icon" />
-                    ) : x.icon === "IoBriefcase" ? (
-                      <IoBriefcase className="nav__icon" />
-                    ) : x.icon === "IoImages" ? (
-                      <IoImages className="nav__icon" />
+                    ) : x.icon === "IoRocketSharp" ? (
+                      <IoRocketSharp className="nav__icon" />
                     ) : (
                       <IoSend className="nav__icon" />
                     )}
