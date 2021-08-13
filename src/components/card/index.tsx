@@ -14,7 +14,7 @@ export default function Card() {
       </div>
       <div className="card-body">
         Lorem ipsum dolor sit amet illiet es ail consectetur adipiscing elit.
-        Ultrices et pulvinar id convallis quis luctus forza
+        Ultrices et pulvinar id convallis quis luctus forza a
         http://ow.ly/95IZ50z3bQP
       </div>
       <div className="card-footer">
